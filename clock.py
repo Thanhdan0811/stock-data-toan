@@ -8,7 +8,7 @@ sched = BlockingScheduler()
 # def timed_job():
 #     print('This job is run every three minutes.')
 
-@sched.scheduled_job('cron', day_of_week="mon,tue,wed,thu,fri,sat,sun" ,hour=21, minute=31, timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
+@sched.scheduled_job('cron', day_of_week="mon,tue,wed,thu,fri,sat,sun" ,hour=22, minute=3, timezone=pytz.timezone("Asia/Ho_Chi_Minh"))
 def scheduled_job():
     call_stock()
     print('This job is run every weekday at 5pm.')
